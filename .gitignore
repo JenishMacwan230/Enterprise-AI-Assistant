@@ -1,0 +1,73 @@
+## ============================
+## Environment Variables (NEVER commit real secrets)
+## ============================
+.env
+.env.local
+.env.*.local
+client/.env.example
+client/.env.local
+server/.env
+
+## ============================
+## Frontend (Next.js / Node)
+## ============================
+client/node_modules/
+client/.next/
+client/out/
+client/build/
+client/.turbo/
+client/.vercel/
+client/next-env.d.ts
+client/*.tsbuildinfo
+
+# pnpm
+client/.pnpm-store/
+
+# npm/yarn (in case anyone uses them by mistake)
+client/npm-debug.log*
+client/yarn-debug.log*
+client/yarn-error.log*
+
+## ============================
+## Backend (Python / FastAPI)
+## ============================
+server/venv/
+server/env/
+server/__pycache__/
+server/**/__pycache__/
+server/*.pyc
+server/*.pyo
+server/.pytest_cache/
+server/.mypy_cache/
+server/*.egg-info/
+server/dist/
+server/build/
+
+## ============================
+## Database / Vector Store local data
+## ============================
+server/*.db
+server/*.sqlite3
+server/qdrant_storage/
+server/chroma_db/
+
+## ============================
+## Uploaded / generated files (documents, reports)
+## ============================
+server/uploads/
+server/generated_reports/
+
+## ============================
+## OS / Editor files
+## ============================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+## ============================
+## Logs
+## ============================
+*.log
+logs/
