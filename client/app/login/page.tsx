@@ -2,10 +2,10 @@
 
 import { CheckCircle2 } from "lucide-react";
 
-import { LoginHeader } from "./_components/login-header";
-import { LoginForm } from "./_components/login-form";
-import { LoginSocial } from "./_components/login-social";
-import { LoginFooter } from "./_components/login-footer";
+import { LoginHeader } from "@/components/login-header";
+import { LoginForm } from "@/components/login-form";
+import { LoginSocial } from "@/components/login-social";
+import { LoginFooter } from "@/components/login-footer";
 
 const features = [
   "AI-powered document analysis and insights",

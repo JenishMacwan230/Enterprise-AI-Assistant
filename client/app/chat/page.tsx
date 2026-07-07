@@ -1,12 +1,12 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { ChatSidebar, type Conversation } from "./_components/chat-sidebar";
-import { ChatHeader } from "./_components/chat-header";
-import { ChatMessageList } from "./_components/chat-message-list";
-import { ChatInput } from "./_components/chat-input";
-import { ChatEmptyState } from "./_components/chat-empty-state";
-import type { Message } from "./_components/chat-message";
+import { ChatSidebar, type Conversation } from "@/components/chat-sidebar";
+import { ChatHeader } from "@/components/chat-header";
+import { ChatMessageList } from "@/components/chat-message-list";
+import { ChatInput } from "@/components/chat-input";
+import { ChatEmptyState } from "@/components/chat-empty-state";
+import type { Message } from "@/components/chat-message";
 import { cn } from "@/lib/utils";
 
 const mockConversations: Conversation[] = [

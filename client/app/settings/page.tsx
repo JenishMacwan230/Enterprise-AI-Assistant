@@ -1,11 +1,11 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { SettingsNav } from "./_components/settings-nav";
-import { SettingsHeader } from "./_components/settings-header";
-import { SettingsProfile } from "./_components/settings-profile";
-import { SettingsApiKeys } from "./_components/settings-api-keys";
-import { SettingsAppearance } from "./_components/settings-appearance";
+import { SettingsNav } from "@/components/settings-nav";
+import { SettingsHeader } from "@/components/settings-header";
+import { SettingsProfile } from "@/components/settings-profile";
+import { SettingsApiKeys } from "@/components/settings-api-keys";
+import { SettingsAppearance } from "@/components/settings-appearance";
 
 type SettingsSection = "profile" | "api-keys" | "appearance";
 
