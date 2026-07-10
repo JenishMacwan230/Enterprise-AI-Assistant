@@ -1,4 +1,4 @@
-from typing import List, Union
+from typing import List, Optional, Union
 from pydantic import BeforeValidator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from typing_extensions import Annotated
@@ -33,5 +33,11 @@ class Settings(BaseSettings):
     
     # Logging
     LOG_LEVEL: str = "INFO"
+
+    # Database
+    # Format: postgresql+asyncpg://user:password@host:port/dbname
+    # asyncpg is the async PostgreSQL driver required by SQLAlchemy 2.0 async.
+    # Optional[str] so the app starts cleanly for health checks before DB is ready.
+    DATABASE_URL: Optional[str] = None
 
 settings = Settings()

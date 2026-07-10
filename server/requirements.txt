@@ -18,3 +18,8 @@ typing_extensions==4.16.0
 uvicorn==0.50.0
 watchfiles==1.2.0
 websockets==16.0
+
+# Phase 1B: Database layer
+sqlalchemy>=2.0.0,<3.0.0     # SQLAlchemy 2.0 with async support
+asyncpg>=0.29.0,<1.0.0       # async PostgreSQL driver (required for asyncpg:// URL)
+alembic>=1.13.0,<2.0.0       # database migration framework
